@@ -45,4 +45,27 @@ const myFunction = function() {
     console.log('Hello World');
 } // Function Object
 
-console.log(typeof myFunction);
+//console.log(typeof myFunction);
+
+// ------------------------------------------------------------------
+
+// Stack (primitive) and Heap (non-primitive)
+
+let ourSuperHeroes = "Shaktimaan";
+let anotherName = ourSuperHeroes;
+anotherName = "Pandit Gangadher Omkarnath Shastri";
+
+console.log(ourSuperHeroes);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@axb"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "Durgesh@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
